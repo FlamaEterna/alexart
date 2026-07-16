@@ -1,0 +1,56 @@
+.contact-container .section-header h2 {
+    animation: contactTitleIn 1s ease-out;
+}
+
+.contact-container .section-header .divider-contact {
+    animation: drawLine 1.2s ease-out 0.4s both;
+    height: 4px;
+    background-color: var(--color-accent, #00d2ff);
+    margin: 20px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+.contact-container .section-header {
+    position: relative;
+}
+
+.contact-container .section-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow:
+        60px -30px 0 2px rgba(0, 210, 255, 0.06),
+        -50px -20px 0 1px rgba(168, 85, 247, 0.05),
+        70px 10px 0 1px rgba(0, 210, 255, 0.04),
+        -60px 25px 0 2px rgba(168, 85, 247, 0.04),
+        40px 40px 0 1px rgba(0, 210, 255, 0.05),
+        -40px -40px 0 2px rgba(168, 85, 247, 0.04);
+    animation: particleFade 1.5s ease-out 0.3s both;
+    pointer-events: none;
+}
+
+@keyframes contactTitleIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes drawLine {
+    0% { width: 0; opacity: 0; }
+    100% { width: 60px; opacity: 1; }
+}
+
+@keyframes particleFade {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}

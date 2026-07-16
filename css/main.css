@@ -1,4 +1,3 @@
-@import url('base/_variables.css');
 @import url('base/reset.css');
 @import url('base/variables.css');
 @import url('components/section-header.css');
@@ -14,3 +13,7 @@
 @import url('effects/bg-music.css');
 @import url('effects/bg-tattoo.css');
 @import url('effects/bg-contact.css');
+@import url('effects/title-animations.css');
+@import url('effects/title-music.css');
+@import url('effects/title-tattoo.css');
+@import url('effects/title-contact.css');

@@ -1,0 +1,9 @@
+.section-header h2 .char {
+    display: inline-block;
+    white-space: pre;
+}
+
+.section-header h2 {
+    position: relative;
+    overflow: hidden;
+}
