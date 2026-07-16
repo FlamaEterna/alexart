@@ -6,7 +6,7 @@ function createVideoCard(video) {
 
     card.innerHTML = `
         <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/${video.id}" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/${video.id}" frameborder="0" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="video-info">
             <h3 id="title-${video.id}">Cargando título...</h3>
@@ -31,7 +31,19 @@ function fetchVideoTitle(videoId) {
 
 function loadYoutubeVideos() {
     const musicGrid = document.getElementById('youtube-music-grid');
+    const skeletonGrid = document.getElementById('skeleton-grid');
     if (!musicGrid) return;
+
+    let loadedCount = 0;
+    const totalVideos = listaVideos.length;
+
+    function checkAllLoaded() {
+        loadedCount++;
+        if (loadedCount === totalVideos && skeletonGrid) {
+            skeletonGrid.style.display = 'none';
+            musicGrid.style.display = 'grid';
+        }
+    }
 
     listaVideos.forEach(video => {
         const card = createVideoCard(video);
@@ -42,8 +54,18 @@ function loadYoutubeVideos() {
             if (titleElement) {
                 titleElement.textContent = title || "Alexart Track";
             }
+            checkAllLoaded();
+        }).catch(() => {
+            checkAllLoaded();
         });
     });
+
+    setTimeout(() => {
+        if (skeletonGrid && skeletonGrid.style.display !== 'none') {
+            skeletonGrid.style.display = 'none';
+            musicGrid.style.display = 'grid';
+        }
+    }, 8000);
 }
 
 export { loadYoutubeVideos };

@@ -18,6 +18,8 @@ function initPortfolioFilter() {
                     item.classList.toggle('hide', !item.classList.contains(targetFilter));
                 }
             });
+
+            window.dispatchEvent(new CustomEvent('filterChanged'));
         });
     });
 }

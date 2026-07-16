@@ -3,42 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música | Flama Eterna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Música | Flama Eterna — AlexArt</title>
+    <meta name="description" content="Producción musical conceptual por AlexArt. Beats, atmósferas y letras que narran historias. Conoce el estudio Flama Eterna.">
+    <meta property="og:title" content="Música | Flama Eterna — AlexArt">
+    <meta property="og:description" content="Producción musical conceptual. Beats, atmósferas y letras que narran historias.">
+    <meta property="og:url" content="https://alexart.com/musica.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://alexart.com/assets/images/Fondo_Musica.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body style="padding-top: 80px;"> <header class="main-header-nav scrolled"> <div class="nav-container">
+<body style="padding-top: 80px;">
+
+    <header class="main-header-nav scrolled">
+        <div class="nav-container">
             <a href="index.html" class="logo">ALEX<span>ART</span></a>
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Inicio</a>
-                <a href="musica.html" class="nav-link active">Música</a> <a href="tatuajes.html" class="nav-link">Tatuajes</a>
+                <a href="musica.html" class="nav-link active">Música</a>
+                <a href="tatuajes.html" class="nav-link">Tatuajes</a>
                 <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
             </nav>
+            <button class="hamburger-btn" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-     <section class="music-container"> <div class="section-header"> <span class="subtitle">PRODUCCIÓN AUDIOVISUAL</span> <h2>FLAMA ETERNA</h2> <div class="divider"></div> </div>
-    
-        <div class="music-grid" id="youtube-music-grid"></div>
+    <div class="mobile-overlay">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="musica.html" class="nav-link active">Música</a>
+        <a href="tatuajes.html" class="nav-link">Tatuajes</a>
+        <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
+    </div>
 
-         <div class="music-footer">
+    <section class="music-container">
+        <div class="section-header">
+            <span class="subtitle">PRODUCCIÓN AUDIOVISUAL</span>
+            <h2>FLAMA ETERNA</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="skeleton-grid" id="skeleton-grid">
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-thumbnail"></div><div class="skeleton-text"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        </div>
+
+        <div class="music-grid" id="youtube-music-grid" style="display:none;"></div>
+
+        <div class="music-footer">
             <p>¿Quieres escuchar más producciones y beats?</p>
             <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" class="btn btn-music">
                 Visitar Canal de YouTube
             </a>
         </div>
     </section>
+
     <footer class="main-footer">
         <div class="footer-container">
-            
+
             <div class="footer-section brand">
                 <h3>ALEX<span>ART</span></h3>
                 <p>Fusionando la potencia del sonido conceptual con la inmortalidad del arte en la piel.</p>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/profile.php?id=61577612647859" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/tu-perfil" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/alexart_tinta" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -67,6 +112,17 @@
             <p>&copy; 2026 AlexArt. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <div class="sticky-cta-mobile">
+        <div class="cta-row">
+            <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" class="cta-btn cta-btn-secondary">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+            <a href="https://wa.me/525645993515" target="_blank" class="cta-btn cta-btn-primary">
+                <i class="fa-brands fa-whatsapp"></i> Contratar
+            </a>
+        </div>
+    </div>
 
     <script type="module" src="js/main.js"></script>
 </body>

@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatuajes | AlexArt Tinta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Tatuajes | AlexArt Tinta — Portafolio</title>
+    <meta name="description" content="Portafolio de tatuajes por AlexArt Tinta. Blackwork, neo-tradicional, flash art y diseños personalizados en Estado de México.">
+    <meta property="og:title" content="Tatuajes | AlexArt Tinta — Portafolio">
+    <meta property="og:description" content="Blackwork, neo-tradicional y flash art. Diseños personalizados en Estado de México.">
+    <meta property="og:url" content="https://alexart.com/tatuajes.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://alexart.com/assets/images/Fondo_Tatto.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -16,10 +29,23 @@
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Inicio</a>
                 <a href="musica.html" class="nav-link">Música</a>
-                <a href="tatuajes.html" class="nav-link active">Tatuajes</a> <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
+                <a href="tatuajes.html" class="nav-link active">Tatuajes</a>
+                <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
             </nav>
+            <button class="hamburger-btn" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-overlay">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="musica.html" class="nav-link">Música</a>
+        <a href="tatuajes.html" class="nav-link active">Tatuajes</a>
+        <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
+    </div>
 
     <section class="tattoo-container">
         <div class="section-header">
@@ -35,14 +61,14 @@
         </div>
 
         <div class="portfolio-grid">
-            
+
             <div class="portfolio-item flash">
                 <div class="item-inner">
-                    
+
                     <div class="carousel-wrapper">
-                        <img src="assets/images/tatto_1.jpg" alt="Flash 1">
-                        <img src="assets/images/tatto_2.jpg" alt="Flash 2">
-                        <img src="assets/images/tatto_3.jpg" alt="Flash 3">
+                        <img src="assets/images/tatto_1.jpg" alt="Flash 1" loading="lazy">
+                        <img src="assets/images/tatto_2.jpg" alt="Flash 2" loading="lazy">
+                        <img src="assets/images/tatto_3.jpg" alt="Flash 3" loading="lazy">
                     </div>
 
                     <div class="item-overlay">
@@ -54,143 +80,159 @@
 
             <div class="portfolio-item flash">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_4.jpg" alt="Diseño Flash Disponible">
+                    <img src="assets/images/tatto_4.jpg" alt="Diseño Flash Disponible" loading="lazy">
                     <div class="item-overlay">
                         <span>Flash Disponible</span>
-                        <p>Blackwork / Tradicional</p> 
+                        <p>Blackwork / Tradicional</p>
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_1.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_1.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
 
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_2.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_2.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_3.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_3.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_5.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_5.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_6.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_6.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_7.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_7.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_8.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_8.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_9.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_9.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_10.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_10.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item tattoos">
-                <div class="item-inner">
-                    <img src="assets/images/tatto_11.jpg" alt="Tatuaje Realizado">
-                    <div class="item-overlay">
-                        <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
-                </div>
-            </div>
-            <div class="portfolio-item tattoos">
-                <div class="item-inner">
-                    <img src="assets/images/tatto_12.jpg" alt="Tatuaje Realizado">
-                    <div class="item-overlay">
-                        <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
-                </div>
-            </div>
-            <div class="portfolio-item tattoos">
-                <div class="item-inner">
-                    <img src="assets/images/tatto_13.jpg" alt="Tatuaje Realizado">
-                    <div class="item-overlay">
-                        <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
-                </div>
-            </div>
-            <div class="portfolio-item tattoos">
-                <div class="item-inner">
-                    <img src="assets/images/tatto_14.jpg" alt="Tatuaje Realizado">
-                    <div class="item-overlay">
-                        <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
-                </div>
-            </div>
-            <div class="portfolio-item tattoos">
-                <div class="item-inner">
-                    <img src="assets/images/tatto_15.jpg" alt="Tatuaje Realizado">
-                    <div class="item-overlay">
-                        <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
 
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_16.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_11.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item tattoos">
                 <div class="item-inner">
-                    <img src="assets/images/tatto_18.jpg" alt="Tatuaje Realizado">
+                    <img src="assets/images/tatto_12.jpg" alt="Tatuaje Realizado" loading="lazy">
                     <div class="item-overlay">
                         <span>Trabajo Realizado</span>
-                        <p>Blackwork / Neo-tradicional</p> </div>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item tattoos">
+                <div class="item-inner">
+                    <img src="assets/images/tatto_13.jpg" alt="Tatuaje Realizado" loading="lazy">
+                    <div class="item-overlay">
+                        <span>Trabajo Realizado</span>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item tattoos">
+                <div class="item-inner">
+                    <img src="assets/images/tatto_14.jpg" alt="Tatuaje Realizado" loading="lazy">
+                    <div class="item-overlay">
+                        <span>Trabajo Realizado</span>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item tattoos">
+                <div class="item-inner">
+                    <img src="assets/images/tatto_15.jpg" alt="Tatuaje Realizado" loading="lazy">
+                    <div class="item-overlay">
+                        <span>Trabajo Realizado</span>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item tattoos">
+                <div class="item-inner">
+                    <img src="assets/images/tatto_16.jpg" alt="Tatuaje Realizado" loading="lazy">
+                    <div class="item-overlay">
+                        <span>Trabajo Realizado</span>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item tattoos">
+                <div class="item-inner">
+                    <img src="assets/images/tatto_18.jpg" alt="Tatuaje Realizado" loading="lazy">
+                    <div class="item-overlay">
+                        <span>Trabajo Realizado</span>
+                        <p>Blackwork / Neo-tradicional</p>
+                    </div>
                 </div>
             </div>
 
@@ -204,16 +246,86 @@
         </div>
     </section>
 
+    <section class="faq-section">
+        <div class="section-header">
+            <span class="subtitle">RESUELVE TUS DUDAS</span>
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <div class="divider-tattoo"></div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cómo agendo una cita para un tatuaje?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Puedes agendar tu cita a través del formulario en nuestra página de cotización o enviando un mensaje directo por WhatsApp. Te pediremos algunos detalles sobre tu idea para preparar el diseño.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cómo cuido mi tatuaje después de la sesión?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Te entregaremos una guía completa de cuidados después de tu sesión. Los cuidados básicos incluyen mantenerlo limpio, hidratado con crema especial y evitar la exposición al sol durante las primeras semanas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Duele hacerse un tatuaje?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>La sensación varía según la zona del cuerpo y tu umbral de dolor. La mayoría describe la sensación como un raspón o ardor leve. Usamos técnicas y equipos modernos para hacer la experiencia lo más cómoda posible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Qué estilos de tatuaje haces?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Me especializo en blackwork, neo-tradicional y flash art. También trabajo diseños personalizados y colaboro contigo para crear algo único que se adapte a tu visión.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuánto cuesta un tatuaje?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>El precio depende del tamaño, la complejidad del diseño y la ubicación. Ofrezco presupuestos personalizados sin compromiso. Contáctame a través del formulario o WhatsApp para recibir una cotización.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿También hago producción musical?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>¡Sí! Bajo el nombre de Flama Eterna, ofrezco producción musical, beats conceptuales y producción audiovisual. Puedes escuchar mi trabajo en la sección de Música y contactarme para colaboraciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="main-footer">
         <div class="footer-container">
-            
+
             <div class="footer-section brand">
                 <h3>ALEX<span>ART</span></h3>
                 <p>Fusionando la potencia del sonido conceptual con la inmortalidad del arte en la piel.</p>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/profile.php?id=61577612647859" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/tu-perfil" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/alexart_tinta" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -242,6 +354,17 @@
             <p>&copy; 2026 AlexArt. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <div class="sticky-cta-mobile">
+        <div class="cta-row">
+            <a href="https://wa.me/525645993515" target="_blank" class="cta-btn cta-btn-secondary">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="cotizar.html" class="cta-btn cta-btn-primary">
+                Cotizar Ahora
+            </a>
+        </div>
+    </div>
 
     <script type="module" src="js/main.js"></script>
 </body>

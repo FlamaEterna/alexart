@@ -25,7 +25,8 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="file"],
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 12px 15px;
     background-color: rgba(3, 8, 15, 0.6);
@@ -35,15 +36,23 @@ textarea {
     font-size: 0.95rem;
     border-radius: var(--border-radius-sm, 4px);
     transition: var(--transition-base, all 0.3s ease);
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: none;
     border-color: var(--color-accent, #00d2ff);
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+select option {
+    background-color: #03080f;
+    color: #fff;
 }
 
 input[type="file"] {

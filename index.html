@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlexArt | Flama Eterna</title>
+    <title>AlexArt | Flama Eterna — Música y Tatuajes</title>
+    <meta name="description" content="AlexArt — Fusión de música conceptual y arte en la piel. Producción musical Flama Eterna y portafolio de tatuajes AlexArt Tinta en Estado de México.">
+    <meta property="og:title" content="AlexArt | Flama Eterna">
+    <meta property="og:description" content="Fusión de música conceptual y arte en la piel. Beats, blackwork y flash art por AlexArt.">
+    <meta property="og:url" content="https://alexart.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://alexart.com/assets/images/Fondo_Musica.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -15,14 +26,28 @@
     <header class="main-header-nav">
         <div class="nav-container">
             <a href="#" class="logo">ALEX<span>ART</span></a>
-            
+
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link active">Inicio</a> <a href="musica.html" class="nav-link">Música</a>
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="musica.html" class="nav-link">Música</a>
                 <a href="tatuajes.html" class="nav-link">Tatuajes</a>
                 <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
             </nav>
+
+            <button class="hamburger-btn" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-overlay">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="musica.html" class="nav-link">Música</a>
+        <a href="tatuajes.html" class="nav-link">Tatuajes</a>
+        <a href="cotizar.html" class="nav-link btn-nav">Cotizar</a>
+    </div>
 
     <main class="split-container">
         <section class="split left">
@@ -44,17 +69,139 @@
         </section>
     </main>
 
+    <section class="bio-section reveal">
+        <div class="bio-grid">
+            <div class="bio-image-wrapper">
+                <div class="bio-image-placeholder">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+            </div>
+            <div class="bio-content">
+                <h2>Conoce a <span>AlexArt</span></h2>
+                <p class="bio-tagline">Músico · Tatuador · Creador Visual</p>
+                <p class="bio-text">
+                    <strong>AlexArt</strong> es un artista multidisciplinario del <strong>Estado de México</strong> que fusiona dos mundos: la potencia del sonido conceptual bajo el nombre de <strong>Flama Eterna</strong> y la inmortalidad del arte en la piel a través de <strong>AlexArt Tinta</strong>.
+                </p>
+                <p class="bio-text">
+                    Con experiencia en producción audiovisual, blackwork, neo-tradicional y flash art, cada proyecto es una oportunidad para crear algo único. Su estudio privado es el espacio donde las ideas cobran vida, ya sea en forma de un beat que narra una historia o un diseño que acompañará a su portador para siempre.
+                </p>
+                <div class="bio-badges">
+                    <span class="bio-badge"><i class="fa-solid fa-headphones"></i> Productor Musical</span>
+                    <span class="bio-badge"><i class="fa-solid fa-dragon"></i> Tatuador</span>
+                    <span class="bio-badge"><i class="fa-solid fa-palette"></i> Blackwork</span>
+                    <span class="bio-badge"><i class="fa-solid fa-fire"></i> Flama Eterna</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="7" data-suffix="+">0<span class="stat-suffix">+</span></div>
+                <div class="stat-divider"></div>
+                <p class="stat-label">Producciones</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50" data-suffix="+">0<span class="stat-suffix">+</span></div>
+                <div class="stat-divider"></div>
+                <p class="stat-label">Tatuajes Realizados</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="3" data-suffix="+">0<span class="stat-suffix">+</span></div>
+                <div class="stat-divider"></div>
+                <p class="stat-label">Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="100" data-suffix="%">0<span class="stat-suffix">%</span></div>
+                <div class="stat-divider"></div>
+                <p class="stat-label">Arte Personalizado</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-header">
+            <span class="subtitle">LO QUE DICEN</span>
+            <h2>TESTIMONIOS</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="testimonials-track-container">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Increíble trabajo. El diseño superó mis expectativas y el proceso fue muy profesional. Sin duda volveré para mi próximo tatuaje.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">C</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos M.</h4>
+                            <span>Blackwork — Brazo completo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">La música de Flama Eterna tiene una atmósfera única. Cada beat cuenta una historia y se siente el trabajo conceptual detrás. El nivel de producción es impresionante, sus beats tienen una identidad propia que pocos logran. Flama Eterna es sinónimo de calidad.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div class="testimonial-info">
+                            <h4>Daniel R.</h4>
+                            <span>Oyente / Seguidor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">El flash art que me tatué es una obra de arte. La atención al detalle y la higiene del estudio me dieron toda la confianza. ¡Gracias Alex!</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="testimonial-info">
+                            <h4>Samantha G.</h4>
+                            <span>Flash Art — Antebrazo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="testimonial-dot active" aria-label="Testimonio 1"></button>
+                <button class="testimonial-dot" aria-label="Testimonio 2"></button>
+                <button class="testimonial-dot" aria-label="Testimonio 3"></button>
+            </div>
+        </div>
+    </section>
 
     <footer class="main-footer">
         <div class="footer-container">
-            
+
             <div class="footer-section brand">
                 <h3>ALEX<span>ART</span></h3>
                 <p>Fusionando la potencia del sonido conceptual con la inmortalidad del arte en la piel.</p>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/profile.php?id=61577612647859" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/tu-perfil" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/alexart_tinta" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -83,6 +230,17 @@
             <p>&copy; 2026 AlexArt. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <div class="sticky-cta-mobile">
+        <div class="cta-row">
+            <a href="https://wa.me/525645993515" target="_blank" class="cta-btn cta-btn-secondary">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="cotizar.html" class="cta-btn cta-btn-primary">
+                Cotizar Ahora
+            </a>
+        </div>
+    </div>
 
     <script type="module" src="js/main.js"></script>
 </body>

@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotizar | AlexArt</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Cotizar | AlexArt — Agenda tu Cita</title>
+    <meta name="description" content="Solicita una cotización para tu tatuaje o producción musical con AlexArt. Presupuesto personalizado vía WhatsApp o formulario.">
+    <meta property="og:title" content="Cotizar | AlexArt — Agenda tu Cita">
+    <meta property="og:description" content="Solicita una cotización personalizada para tu tatuaje o producción musical.">
+    <meta property="og:url" content="https://alexart.com/cotizar.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://alexart.com/assets/images/Fondo_Musica.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -19,8 +32,20 @@
                 <a href="tatuajes.html" class="nav-link">Tatuajes</a>
                 <a href="cotizar.html" class="nav-link active">Cotizar</a>
             </nav>
+            <button class="hamburger-btn" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-overlay">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="musica.html" class="nav-link">Música</a>
+        <a href="tatuajes.html" class="nav-link">Tatuajes</a>
+        <a href="cotizar.html" class="nav-link active">Cotizar</a>
+    </div>
 
     <section class="contact-container" style="min-height: auto; padding-bottom: 50px;">
         <div class="section-header">
@@ -38,9 +63,9 @@
         </div>
 
         <div class="contact-wrapper">
-            <h3 style="color:#ff6a00; font-size:1.5rem; margin-bottom:5px; font-weight:900;">Cotización Formal por Correo</h3>
-            <p style="color:#666; font-size:0.85rem; margin-bottom:20px;">Llena este formulario si ya tienes tu idea estructurada y deseas adjuntar una imagen de referencia.</p>
-            
+            <h3 style="color:var(--color-accent); font-size:1.5rem; margin-bottom:5px; font-weight:900;">Cotización Formal</h3>
+            <p style="color:var(--color-text-muted); font-size:0.85rem; margin-bottom:20px;">Llena este formulario si ya tienes tu idea estructurada y deseas adjuntar una imagen de referencia.</p>
+
             <form class="booking-form" action="https://formspree.io/f/xnjejgpv" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Nombre Completo</label>
@@ -52,14 +77,23 @@
                     <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
                 </div>
 
+                <div class="form-group">
+                    <label for="service-type">Tipo de Servicio</label>
+                    <select id="service-type" name="service-type" style="width:100%;padding:12px 15px;background:rgba(3,8,15,0.6);border:1px solid rgba(0,210,255,0.15);color:#fff;font-family:var(--font-primary);font-size:0.95rem;border-radius:var(--border-radius-sm);">
+                        <option value="tattoo" style="background:#03080f;">Tatuaje</option>
+                        <option value="music" style="background:#03080f;">Producción Musical</option>
+                        <option value="both" style="background:#03080f;">Ambos</option>
+                    </select>
+                </div>
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="size">Tamaño aproximado (en cm)</label>
-                        <input type="text" id="size" name="size" required placeholder="Ej. 10x10 cm">
+                        <input type="text" id="size" name="size" placeholder="Ej. 10x10 cm">
                     </div>
                     <div class="form-group">
                         <label for="placement">Zona del cuerpo</label>
-                        <input type="text" id="placement" name="placement" required placeholder="Ej. Antebrazo, Pantorrilla">
+                        <input type="text" id="placement" name="placement" placeholder="Ej. Antebrazo, Pantorrilla">
                     </div>
                 </div>
 
@@ -67,7 +101,7 @@
                     <label for="reference-img">Imagen de Referencia / Idea</label>
                     <input type="file" id="reference-img" name="reference-image" accept="image/*" disabled>
                     <p style="color: #ff6a00; font-size: 0.8rem; margin-top: 5px;">
-                        Función en desarrollo. La carga de archivos estará disponible próximamente.
+                        Función en desarrollo. Pronto estará disponible.
                     </p>
                 </div>
 
@@ -80,7 +114,7 @@
                     <label for="description">Describe tu idea</label>
                     <textarea id="description" name="description" rows="5" required placeholder="Cuéntanos los detalles esenciales de tu diseño..."></textarea>
                 </div>
-                
+
                 <button type="submit" class="btn btn-submit">Enviar Datos a Correo</button>
             </form>
         </div>
@@ -88,14 +122,14 @@
 
    <footer class="main-footer">
         <div class="footer-container">
-            
+
             <div class="footer-section brand">
                 <h3>ALEX<span>ART</span></h3>
                 <p>Fusionando la potencia del sonido conceptual con la inmortalidad del arte en la piel.</p>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/profile.php?id=61577612647859" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@AlexArt-FlamaEterna" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/tu-perfil" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/alexart_tinta" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -124,6 +158,18 @@
             <p>&copy; 2026 AlexArt. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <div class="sticky-cta-mobile">
+        <div class="cta-row">
+            <a href="https://wa.me/525645993515" target="_blank" class="cta-btn cta-btn-secondary">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="cotizar.html" class="cta-btn cta-btn-primary">
+                Cotizar Ahora
+            </a>
+        </div>
+    </div>
+
     <script type="module" src="js/main.js"></script>
 </body>
 </html>

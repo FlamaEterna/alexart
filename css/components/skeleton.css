@@ -1,0 +1,56 @@
+.skeleton-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.skeleton-card {
+    background: rgba(10, 25, 41, 0.3);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(0, 210, 255, 0.08);
+}
+
+.skeleton-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(90deg,
+        rgba(10, 25, 41, 0.3) 0%,
+        rgba(0, 210, 255, 0.05) 50%,
+        rgba(10, 25, 41, 0.3) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.5s ease-in-out infinite;
+}
+
+.skeleton-text {
+    padding: 20px;
+}
+
+.skeleton-line {
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(90deg,
+        rgba(10, 25, 41, 0.3) 0%,
+        rgba(0, 210, 255, 0.05) 50%,
+        rgba(10, 25, 41, 0.3) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.5s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+.skeleton-line:last-child {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+@keyframes skeletonShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
