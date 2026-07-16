@@ -10,3 +10,6 @@
 @import url('pages/_music.css');
 @import url('pages/_tattoo.css');
 @import url('pages/_contact.css');
+@import url('effects/_bg-music.css');
+@import url('effects/_bg-tattoo.css');
+@import url('effects/_bg-contact.css');

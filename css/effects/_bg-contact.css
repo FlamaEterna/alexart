@@ -1,0 +1,41 @@
+.contact-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #050d1a 0%, #080d1f 40%, #0c0a20 60%, #050d1a 100%);
+    animation: contactFadeIn 1s ease-out;
+}
+
+.contact-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 80% 20%, rgba(0, 210, 255, 0.03) 0%, transparent 40%),
+                radial-gradient(ellipse at 20% 70%, rgba(168, 85, 247, 0.02) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.contact-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    box-shadow:
+        20% 30vh 0 4px rgba(0, 210, 255, 0.04),
+        50% 65vh 0 3px rgba(168, 85, 247, 0.03),
+        80% 40vh 0 5px rgba(0, 210, 255, 0.03);
+    animation: contactFloat 30s ease-in-out infinite alternate;
+}
+
+@keyframes contactFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes contactFloat {
+    0% { transform: translateY(0) scale(1); opacity: 0.06; }
+    100% { transform: translateY(-20px) scale(1.03); opacity: 0.12; }
+}
