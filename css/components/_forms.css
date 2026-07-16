@@ -1,0 +1,65 @@
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--color-text-secondary, #a4bccc);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(3, 8, 15, 0.6);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    color: #fff;
+    font-family: var(--font-primary, 'Montserrat', sans-serif);
+    font-size: 0.95rem;
+    border-radius: var(--border-radius-sm, 4px);
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-accent, #00d2ff);
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+input[type="file"] {
+    padding: 8px;
+    font-size: 0.85rem;
+}
+
+input[type="file"]:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

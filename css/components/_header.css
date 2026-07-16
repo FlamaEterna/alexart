@@ -1,0 +1,112 @@
+.main-header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(3, 8, 15, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 210, 255, 0.1);
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+.main-header-nav.scrolled {
+    background-color: rgba(3, 8, 15, 0.95);
+    border-bottom: 1px solid rgba(0, 210, 255, 0.25);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--color-accent, #00d2ff);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--color-text-secondary, #a4bccc);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent, #00d2ff);
+}
+
+.btn-nav {
+    background-color: var(--color-accent, #00d2ff);
+    color: var(--color-primary, #03080f);
+    font-weight: 800;
+    padding: 8px 18px;
+    border-radius: var(--border-radius-sm, 4px);
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+.btn-nav:hover {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+    outline: 1px solid var(--color-accent, #00d2ff);
+}
+
+.nav-menu .nav-link.active {
+    color: var(--color-accent, #00d2ff);
+    border-bottom: 2px solid var(--color-accent, #00d2ff);
+    padding-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .main-header-nav {
+        position: relative;
+        padding: 0;
+    }
+    .nav-container {
+        flex-direction: row;
+        padding: 10px 4%;
+        gap: 6px;
+    }
+    .logo {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .nav-menu {
+        gap: 5px;
+        flex-wrap: nowrap;
+    }
+    .nav-link {
+        font-size: 0.65rem;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+        padding: 4px 6px;
+    }
+    .btn-nav {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+    }
+}

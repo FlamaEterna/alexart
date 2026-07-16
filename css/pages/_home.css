@@ -1,0 +1,144 @@
+.split-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.split {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1;
+}
+
+.split:hover {
+    flex: 1.5;
+    z-index: 2;
+}
+
+.layer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -10%;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1;
+}
+
+.split::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 8, 15, 0.7);
+    z-index: 2;
+    transition: background 0.5s ease;
+}
+
+.split.left:hover .layer-bg {
+    transform: translateX(5%);
+}
+
+.split.right:hover .layer-bg {
+    transform: translateX(-5%);
+}
+
+.split:hover::before {
+    background: rgba(3, 8, 15, 0.45);
+}
+
+.music-bg {
+    background-image: url('../../assets/images/Fondo_Musica.jpg');
+}
+
+.tattoo-bg {
+    background-image: url('../../assets/images/Fondo_Tatto.png');
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    padding: 30px 40px;
+    max-width: 85%;
+    text-align: center;
+    background: rgba(10, 25, 41, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.split.left h2 {
+    color: var(--color-accent, #00d2ff);
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+}
+
+.split.right h2 {
+    color: #e0e0e0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.content p {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    color: #d1e2ee;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    .split {
+        width: 100% !important;
+        height: 50vh;
+        flex: none !important;
+    }
+    .split .content {
+        padding: 20px;
+    }
+    .split h2 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    .split p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        max-width: 280px;
+    }
+    .layer-bg {
+        width: 100% !important;
+        margin-left: 0 !important;
+        transform: none !important;
+    }
+    .split:hover .layer-bg {
+        transform: none !important;
+    }
+}

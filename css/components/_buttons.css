@@ -1,0 +1,50 @@
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-sm, 4px);
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+.btn-music {
+    background-color: transparent;
+    color: var(--color-accent, #00d2ff);
+    border: 2px solid var(--color-accent, #00d2ff);
+}
+
+.btn-music:hover {
+    background-color: var(--color-accent, #00d2ff);
+    color: var(--color-primary, #03080f);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
+
+.btn-tattoo {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-tattoo:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--color-accent, #00d2ff);
+    color: var(--color-primary, #03080f);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+.btn-submit:hover {
+    background-color: #00b4db;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+}

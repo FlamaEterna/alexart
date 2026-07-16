@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #03080f;
+    --color-accent: #00d2ff;
+    --color-text: #fff;
+    --color-text-secondary: #a4bccc;
+    --color-text-muted: #8da2b5;
+    --color-dark: #050d1a;
+    --color-darker: #02050a;
+    --color-glass-bg: rgba(10, 25, 41, 0.4);
+    --color-overlay: rgba(3, 8, 15, 0.7);
+    --font-primary: 'Montserrat', sans-serif;
+    --border-glass: 1px solid rgba(0, 210, 255, 0.15);
+    --border-radius: 12px;
+    --border-radius-sm: 4px;
+    --transition-base: all 0.3s ease;
+}
